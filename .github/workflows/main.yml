@@ -2,7 +2,7 @@
 
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-
+ 
 
 #Change the name to match your course name
 
@@ -24,9 +24,9 @@ jobs:
 
     runs-on: windows-latest
 
-     steps:
+    steps:
 
-    - uses: actions/checkout@main
+    - uses: actions/checkout@master
 
     - name: Deploy to Azure Web App
 
@@ -36,7 +36,7 @@ jobs:
 
       #Change the app-name to match what was provided to you in the publish settings file, this is in a naming convention of 'COURSENAME-STUDENTUID'
 
-        app-name: 'cmst385-ymatsuzkai'
+        app-name: 'CMST385-ymatsuzkai'
 
         slot-name: 'production'
 
