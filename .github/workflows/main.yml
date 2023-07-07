@@ -8,32 +8,19 @@
 
 #Example name: Deploy HTML Files to AppService - COURSENAME
 
-name: Deploy HTML Files to AppService - CMST385
-
+name: Deploy HTML Files to AppServiceCMST385
 on:
-
   push:
-
     branches:
-
       - main
-
 jobs:
-
   build-and-deploy:
-
     runs-on: windows-latest
-
     steps:
-
     - uses: actions/checkout@master
-
     - name: Deploy to Azure Web App
-
       uses: azure/webapps-deploy@v1
-
       with:
-
       #Change the app-name to match what was provided to you in the publish settings file, this is in a naming convention of 'COURSENAME-STUDENTUID'
 
         app-name: 'CMST385-ymatsuzkai'
