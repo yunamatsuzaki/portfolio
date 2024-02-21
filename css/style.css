@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+/* リセットの記述 */
+
+body,h1,h2,h3,p,ul,figure{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+img{
+    vertical-align:bottom;
+}
+
+/* ページ全体の基本指定 */
+/Volumes/Untitled/Wit/tsutsuji/html.txt
+*{box-sizing: border-box;}
+
+body{
+    font-size: 16px;
+    color:#333;
+    background-color: #ffd7bb;
+    font-family: Arial,"メイリオ",Meiryo,sans-serif;
+}
+
+/* 幅の制御を担当する記述 */
+.inner{
+    width:960px;
+    margin: auto;
+}
+
+/* 横並びを担当する記述 */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ヘッダー */
+
+header{
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+/* メインビジュアルの記述 */
+
+.visual{
+    background-image: url(../images/img_mainvisual.jpg);
+    height:350px;
+    background-position: center top;
+    color:transparent;
+    line-height: 0;
+    font-size: 0;
+    margin-bottom: 40px;
+}
+
+/* ナビゲーションの指定 */
+
+nav ul li{
+    width: 100px;
+    height: 57px;
+}
+
+nav ul li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    line-height: 0;
+    font-size: 0;
+}
+
+nav ul .nav01 a{
+    background-image: url(../images/nav01.png);
+}
+
+nav ul .nav02 a{
+    background-image: url(../images/nav02.png);
+}
+
+nav ul .nav03 a{
+    background-image: url(../images/nav03.png);
+}
+
+nav ul .nav04 a{
+    background-image: url(../images/nav04.png);
+}
+
+nav ul .nav05 a{
+    background-image: url(../images/nav05.png);
+}
+
+nav ul .nav01 a:hover{
+    background-image: url(../images/nav01_hover.png);
+}
+
+nav ul .nav02 a:hover{
+    background-image: url(../images/nav02_hover.png);
+}
+
+nav ul .nav03 a:hover{
+    background-image: url(../images/nav03_hover.png);
+}
+
+nav ul .nav04 a:hover{
+    background-image: url(../images/nav04_hover.png);
+}
+
+nav ul .nav05 a:hover{
+    background-image: url(../images/nav05_hover.png);
+}
+
+/* 左側のエリア（article）の指定 */
+
+section{
+    background-color: #fff;
+    width: 640px;
+    padding: 60px 65px;
+}
+
+section h2{
+    font-size: 24px;
+    text-align: center;
+    background-image: url(../images/title_h2.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+}
+
+section p{
+    margin-bottom: 1.5em;
+    text-indent:1em;
+}
+
+section figure{
+    text-align: center;
+}
+
+/* 右側のエリア（aside）の指定 */
+
+aside{
+    background-color: #fff;
+    width: 300px;
+    padding: 30px 35px;
+    font-size: 14px;
+}
+
+aside h3{
+    font-size: 20px;
+    text-align: center;
+    background-image: url(../images/title_h3.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+aside p{
+    margin-bottom: 1em;
+}
+
+aside .banner{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+aside .banner li{
+    margin-bottom: 15px;
+}
+
+aside .event{
+    margin-bottom:20px;
+}
+
+aside .event li{
+    border-bottom:1px solid #ccc;
+    line-height: 3;
+}
+
+aside .event li::before{
+    content:"";
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    background-image: url(../images/icon_list.png);
+    margin-right: 5px;
+    vertical-align: -2px;
+}
+
+aside table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #fff;
+}
+
+aside table th{
+    background-color: #bbb;
+    font-weight: normal;
+    border: 1px solid #fff;
+    padding: 5px 0;
+}
+
+aside table td{
+    background-color: #ccc;
+    border: 1px solid #fff;
+    padding: 5px 0;
+}
+
+aside table .sun{
+    background-color: #f2b1b1;
+}
+
+aside table .sat{
+    background-color: #9cdfef;
+}
+
+/* フッターの記述 */
+footer{
+    background-color: #fff;
+    border-top: 3px solid #fcbf65;
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px 0 10px;
+}
+
+footer .copyright{
+    margin-top: 15px;
+}
+
+footer .copyright small{
+    font-size: 12px;
+}
